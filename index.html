@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <input type="search" id="search" placeholder="Search" onkeyup="search()">
+        <p>Your Notes</p>
+    </nav>
+    <div id="container">
+        <div id="show-notes">
+            <button id="new-note" onclick="postNewNote('')">Add New Note</button>
+            <div id="note-list"></div> <!-- Here notes will come inside this -->
+        </div>
+        <div id="edit-note"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- 1. Can create new empty note - DONE
+     2. Lists updates after new note is created - DONE
+     3. Edit note area also updates when new note is create - DONE
+     4. Update note in note edit area after clicking save - DONE
+     5. Delete any note - DONE
+     6. Search any note - DONE
+     7. Delete any empty note - DONE
+     8. Disable add new note button when already its clicked and new note is not saved - DONE
+     9. star any note to put in top in list
+-->

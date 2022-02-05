@@ -1,0 +1,11 @@
+{
+  "name": "notesapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "npx nodemon server.js"
+  },
+  "author": "Parthik Kumar Das",
+  "license": "ISC"
+}

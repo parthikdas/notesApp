@@ -1,0 +1,126 @@
+:root {
+    --purple-text: rgb(100, 79, 195);
+    --white-text: rgb(255, 255, 255);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--purple-text);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+}
+#navbar {
+    height: 8vh;
+    background-color: rgb(120, 104, 202);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem;
+}
+#search {
+    width: 40%;
+    border-radius: 1rem;
+    border: none;
+    padding: .4rem 1.4rem;
+    font-size: .8rem;
+}
+::selection {
+    color: #fff;
+    background-color: var(--purple-text);
+}
+p {
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+}
+#container {
+    height: 92vh;
+    padding: .5rem;
+    background-color: rgb(243, 246, 252);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#show-notes {
+    height: 98%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#new-note {
+    height: 8%;
+    width: 90%;
+    background-color: rgb(73, 57, 157);
+    color: var(--white-text);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
+    cursor: pointer;
+    border: none;
+}
+#note-list {
+    height: 92%;
+    width: 100%;
+    overflow-y: scroll;
+}
+.note {
+    height: 6rem;
+    width: 100%;
+    border-bottom: .1rem solid rgb(233, 235, 242);
+    border-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+    cursor: pointer;
+}
+.note:hover {
+    background-color: var(--white-text);
+    box-shadow: 0 0 .2rem .2rem rgb(233, 235, 242);
+}
+.noteText {
+    overflow-y: hidden;
+    width: 90%;
+    line-height: 1.4rem;
+}
+.noteButtons {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#edit-note {
+    height: 98%;
+    width: 60%;
+    background-color: var(--white-text);
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+textarea {
+    border: none;
+    height: 90%;
+    width: 95%;
+    font-size: 1.1rem;
+    outline: none;
+    margin-bottom: .2rem;
+    line-height: 1.5rem;
+}
+.saveBtn {
+    height: 2rem;
+    width: 4rem;
+    border: 1px solid var(--purple-text);
+    background: transparent;
+    border-radius: .5rem;
+    font-size: .8rem;
+    cursor: pointer;
+}
